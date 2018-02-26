@@ -13,7 +13,7 @@ public class MovementEngine {
         PlayerModel player = state.getPlayer();
         if (player.isHolding(ball)) {
             ball.setX(player.getX() + 40);
-            ball.setY(player.getY() + player.getHeight() -5);
+            ball.setY(player.getY() + player.getHeight() - 5);
         } else {
             ball.setY(ball.getY() + ball.getyVelocity());
             ball.setX(ball.getX() + ball.getxVelocity());
